@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="session78_files/libs/clipboard/clipboard.min.js"></script>
+<script src="session78_files/libs/quarto-html/tabby.min.js"></script>
+<script src="session78_files/libs/quarto-html/popper.min.js"></script>
+<script src="session78_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="session78_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="session78_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="session78_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
+
+  <title>session78</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="session78_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="session78_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="session78_files/libs/revealjs/dist/theme/quarto-77fa2cb3bc1469902a4e0e907f0733e5.css">
+  <link href="session78_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="session78_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="session78_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="session78_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level2">
+
+<style> 
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: #2980b9;
+}
+.reveal {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+</style>
+<div style="text-align:center; margin-top: 40px; line-height: 1.4;">
+<p><img src="https://pelprek.sgp1.digitaloceanspaces.com/banner/3489/148825024520275.png" alt="PPIU Logo" style="width: 400px; margin-bottom: 20px;"></p>
+<h1 style="font-size: 3em; font-weight: 700; color: #2980b9; margin-bottom: 10px;">
+Data Analytics
+</h1>
+<h2 style="font-size: 1.6em; font-weight: 500; color: #555;">
+Survey Design &amp; Sampling
+</h2>
+<div style="border-bottom: 4px solid #e74c3c; width: 45%; margin: 18px auto;">
+
+</div>
+<h3 style="margin-top: 25px; font-weight: 700; color: #050E3C">
+By: MIN Sothearith
+</h3>
+<h4 style="font-weight: 700; color: #666;">
+Phnom Penh International University
+</h4>
+</div>
+</section>
+<section id="quick-recap-last-week" class="slide level2">
+<h2>Quick Recap: Last Week 📚</h2>
+<p><strong>What We Covered:</strong></p>
+<ul>
+<li>Primary vs secondary data sources</li>
+<li>Quantitative vs qualitative data</li>
+<li>Levels of measurement: nominal, ordinal, interval, ratio</li>
+<li>Data formats (CSV, JSON, XML, Excel)</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Remember</strong></p>
+</div>
+<div class="callout-content">
+<p>The <strong>quality</strong> of your data depends on how you <strong>collect</strong> it!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="todays-learning-objectives" class="slide level2">
+<h2>Today’s Learning Objectives</h2>
+<p><strong>By the end of this session, you will:</strong></p>
+<ul>
+<li>Understand different <strong>sampling strategies</strong> and when to use each</li>
+<li>Identify and avoid common sources of <strong>bias</strong> in surveys</li>
+<li>Design effective <strong>survey questions</strong> that get reliable answers</li>
+<li>Apply best practices for <strong>questionnaire structure</strong> and flow</li>
+<li>Recognize the connection between sampling, bias, and survey quality</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>⏱️ Time:</strong> ~90 minutes | <strong>📝 Activity:</strong> Hands-on survey design practice!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="session-roadmap" class="slide level2 scrollable">
+<h2>Session Roadmap 🗺️</h2>
+<ol type="1">
+<li><strong>Part 1:</strong> Introduction to Surveys &amp; Why They Matter</li>
+<li><strong>Part 2:</strong> Sampling Strategies (Probability &amp; Non-Probability)</li>
+<li><strong>Part 3:</strong> Understanding and Avoiding Bias</li>
+<li><strong>Part 4:</strong> Survey Design Principles</li>
+<li><strong>Part 5:</strong> Question Types &amp; Best Practices</li>
+<li>Practice &amp; Takeaways</li>
+</ol>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 We focus on <strong>sampling</strong>, <strong>bias</strong>, and <strong>effective survey design</strong>!</strong></p>
+</div>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+</section>
+<section id="part-1-why-surveys-matter" class="slide level2">
+<h2>Part 1: Why Surveys Matter 📊</h2>
+<h3 style="color: #2980b9; font-size: 1.8em;" id="ask-the-wrong-people-the-wrong-questions">“Ask the wrong people the wrong questions…”</h3>
+<p>…and you get wrong answers!</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Key Insight</strong></p>
+</div>
+<div class="callout-content">
+<p>Surveys are a <strong>primary data collection</strong> method. Good survey design = good data = reliable insights!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-makes-a-good-survey" class="slide level2">
+<h2>What Makes a Good Survey?</h2>
+<p><strong>Three Critical Components:</strong></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<h3 id="right-sample">1. <strong>Right Sample</strong></h3>
+<p>Who you ask</p>
+<ul>
+<li>Representative of population</li>
+<li>Sufficient size</li>
+<li>Unbiased selection</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<h3 id="right-questions">2. <strong>Right Questions</strong></h3>
+<p>What you ask</p>
+<ul>
+<li>Clear and unbiased</li>
+<li>Appropriate response options</li>
+<li>Logical flow</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<h3 id="right-method">3. <strong>Right Method</strong></h3>
+<p>How you ask</p>
+<ul>
+<li>Appropriate channel</li>
+<li>Good timing</li>
+<li>Minimize bias</li>
+</ul>
+</div></div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Weak in any area?</strong></p>
+</div>
+<div class="callout-content">
+<p>Your results will be unreliable, no matter how sophisticated your analysis!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="part-2-sampling-strategies" class="slide level2">
+<h2>Part 2: Sampling Strategies 🎯</h2>
+<p><strong>Sampling</strong> = Selecting a <strong>subset</strong> of a <strong>population</strong> to study.</p>
+<p><strong>Why sample?</strong></p>
+<ul>
+<li>✅ <strong>Cost-effective:</strong> Can’t survey everyone (time, money)</li>
+<li>✅ <strong>Faster:</strong> Get results quicker than a census</li>
+<li>✅ <strong>Practical:</strong> Some populations are huge or hard to reach</li>
+<li>✅ <strong>Statistical validity:</strong> A good sample can represent the whole population</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Key terms</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Population</strong> = entire group you want to understand<br>
+<strong>Sample</strong> = subset you actually study<br>
+<strong>Sampling frame</strong> = list or source from which you select</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sampling-key-concepts" class="slide level2">
+<h2>Sampling: Key Concepts</h2>
+<p><strong>Sample Size (n):</strong></p>
+<ul>
+<li>Larger sample → more precise estimates</li>
+<li>But diminishing returns (1000 → 2000 less gain than 100 → 200)</li>
+<li>Depends on population variability and desired precision</li>
+</ul>
+<p><strong>Representativeness:</strong></p>
+<ul>
+<li>Sample should <strong>reflect</strong> the population characteristics</li>
+<li>Age, gender, region, behavior patterns, etc.</li>
+<li>Non-representative sample → biased results</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Remember</strong></p>
+</div>
+<div class="callout-content">
+<p>Big sample ≠ good sample. A biased sample of 10,000 is worse than a representative sample of 500!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="two-main-sampling-approaches" class="slide level2">
+<h2>Two Main Sampling Approaches</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="probability-sampling"><strong>Probability Sampling</strong></h3>
+<p>Every member has a <strong>known, non-zero</strong> chance of selection</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Can calculate sampling error</li>
+<li>Generalizable to population</li>
+<li>Scientifically rigorous</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Requires sampling frame</li>
+<li>More expensive/time-consuming</li>
+<li>May be impractical</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="non-probability-sampling"><strong>Non-Probability Sampling</strong></h3>
+<p>Selection based on <strong>convenience</strong>, <strong>judgment</strong>, or <strong>availability</strong></p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Faster and cheaper</li>
+<li>Easier to implement</li>
+<li>Good for exploratory research</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Cannot generalize statistically</li>
+<li>Unknown bias</li>
+<li>No sampling error calculation</li>
+</ul>
+</div></div>
+</section>
+<section id="probability-sampling-methods" class="slide level2">
+<h2>Probability Sampling Methods</h2>
+<h3 id="simple-random-sampling">1. <strong>Simple Random Sampling</strong></h3>
+<p>Every member has <strong>equal</strong> chance of selection (like drawing names from a hat).</p>
+<p><strong>How:</strong> Number everyone, use random number generator to select.</p>
+<p><strong>Pros:</strong> Unbiased, simple concept<br>
+<strong>Cons:</strong> Need complete list; may miss subgroups</p>
+<p><strong>Example:</strong> Select 200 students from 2,000 by random number</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best for</strong></p>
+</div>
+<div class="callout-content">
+<p>Homogeneous populations where you have a complete list!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="probability-sampling-methods-cont." class="slide level2">
+<h2>Probability Sampling Methods (cont.)</h2>
+<h3 id="systematic-sampling">2. <strong>Systematic Sampling</strong></h3>
+<p>Select every <strong>k-th</strong> member from a list.</p>
+<p><strong>How:</strong> Choose starting point randomly, then every 10th, 20th, etc.</p>
+<p><strong>Pros:</strong> Simple, spreads across list<br>
+<strong>Cons:</strong> If list has pattern, may introduce bias</p>
+<p><strong>Example:</strong> Every 5th customer entering a store</p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Watch out</strong></p>
+</div>
+<div class="callout-content">
+<p>If list is ordered (e.g., by department), systematic sampling might skip certain groups!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="probability-sampling-methods-cont.-1" class="slide level2 scrollable">
+<h2>Probability Sampling Methods (cont.)</h2>
+<h3 id="stratified-sampling">3. <strong>Stratified Sampling</strong></h3>
+<p>Divide population into <strong>strata</strong> (subgroups), then sample from each stratum.</p>
+<p><strong>How:</strong></p>
+<ol type="1">
+<li>Divide by key characteristic (age, region, etc.)</li>
+<li>Sample randomly within each stratum</li>
+<li>Can use proportional or equal allocation</li>
+</ol>
+<p><strong>Pros:</strong> Ensures representation of subgroups, more precise<br>
+<strong>Cons:</strong> Need to know strata in advance</p>
+<p><strong>Example:</strong> Survey 100 students: 40 Year 1, 30 Year 2, 30 Year 3 (proportional to enrollment)</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best for</strong></p>
+</div>
+<div class="callout-content">
+<p>When subgroups are important and you want to ensure all are represented!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="probability-sampling-methods-cont.-2" class="slide level2 scrollable">
+<h2>Probability Sampling Methods (cont.)</h2>
+<h3 id="cluster-sampling">4. <strong>Cluster Sampling</strong></h3>
+<p>Divide population into <strong>clusters</strong> (groups), randomly select clusters, survey <strong>all</strong> in selected clusters.</p>
+<p><strong>How:</strong></p>
+<ol type="1">
+<li>Divide into natural groups (schools, villages, etc.)</li>
+<li>Randomly select clusters</li>
+<li>Survey everyone in selected clusters (or sub-sample within)</li>
+</ol>
+<p><strong>Pros:</strong> Cost-effective for geographically spread populations<br>
+<strong>Cons:</strong> Higher sampling error if clusters are very different</p>
+<p><strong>Example:</strong> Select 10 schools from 100, survey all students in those 10</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Difference from stratified</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Stratified</strong> = sample from all strata. <strong>Cluster</strong> = sample entire clusters, not all clusters!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="stratified-vs-cluster-visual-comparison" class="slide level2">
+<h2>Stratified vs Cluster: Visual Comparison</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 43%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th><strong>Stratified</strong></th>
+<th><strong>Cluster</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Division</strong></td>
+<td>By key characteristic (age, gender)</td>
+<td>By natural groups (location, class)</td>
+</tr>
+<tr class="even">
+<td><strong>Sampling</strong></td>
+<td>Sample from <strong>every</strong> stratum</td>
+<td>Sample <strong>some</strong> clusters only</td>
+</tr>
+<tr class="odd">
+<td><strong>Within group</strong></td>
+<td>Random selection</td>
+<td>Usually all members (or sub-sample)</td>
+</tr>
+<tr class="even">
+<td><strong>Goal</strong></td>
+<td>Ensure subgroup representation</td>
+<td>Reduce cost/logistics</td>
+</tr>
+<tr class="odd">
+<td><strong>Precision</strong></td>
+<td>Usually higher</td>
+<td>Usually lower</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Rule of thumb</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Stratified</strong> when subgroups matter. <strong>Cluster</strong> when logistics/cost matter!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-probability-sampling-methods" class="slide level2">
+<h2>Non-Probability Sampling Methods</h2>
+<h3 id="convenience-sampling">1. <strong>Convenience Sampling</strong></h3>
+<p>Select whoever is <strong>easiest</strong> to reach.</p>
+<p><strong>How:</strong> Survey people in the cafeteria, on the street, your friends</p>
+<p><strong>Pros:</strong> Fast, cheap<br>
+<strong>Cons:</strong> High bias, not representative</p>
+<p><strong>Example:</strong> Surveying classmates about university policy</p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Caution</strong></p>
+</div>
+<div class="callout-content">
+<p>Good for quick feedback, but <strong>cannot generalize</strong> to population!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-probability-sampling-methods-cont." class="slide level2">
+<h2>Non-Probability Sampling Methods (cont.)</h2>
+<h3 id="purposive-judgmental-sampling">2. <strong>Purposive (Judgmental) Sampling</strong></h3>
+<p><strong>Researcher</strong> selects participants based on judgment of who is “typical” or “informative.”</p>
+<p><strong>How:</strong> Choose experts, key informants, or specific characteristics</p>
+<p><strong>Pros:</strong> Good for qualitative, exploratory research<br>
+<strong>Cons:</strong> Subjective, bias from researcher’s judgment</p>
+<p><strong>Example:</strong> Interview 10 experienced teachers about curriculum</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best for</strong></p>
+</div>
+<div class="callout-content">
+<p>Qualitative research, expert opinions, case studies!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-probability-sampling-methods-cont.-1" class="slide level2">
+<h2>Non-Probability Sampling Methods (cont.)</h2>
+<h3 id="quota-sampling">3. <strong>Quota Sampling</strong></h3>
+<p>Like stratified, but selection within quotas is <strong>non-random</strong>.</p>
+<p><strong>How:</strong> Set quotas (e.g., 50 males, 50 females), fill by convenience</p>
+<p><strong>Pros:</strong> Ensures subgroup representation, faster than stratified<br>
+<strong>Cons:</strong> Bias within quotas, no random selection</p>
+<p><strong>Example:</strong> Survey 100 people: 50 male, 50 female, stopping when quota is filled</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Difference from stratified</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Stratified</strong> = random within strata. <strong>Quota</strong> = convenience within quotas!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-probability-sampling-methods-cont.-2" class="slide level2">
+<h2>Non-Probability Sampling Methods (cont.)</h2>
+<h3 id="snowball-sampling">4. <strong>Snowball Sampling</strong></h3>
+<p>Participants <strong>refer</strong> others (like a snowball growing).</p>
+<p><strong>How:</strong> Start with a few, ask them to refer others, and so on</p>
+<p><strong>Pros:</strong> Good for hard-to-reach populations<br>
+<strong>Cons:</strong> Bias (network effects), not representative</p>
+<p><strong>Example:</strong> Surveying people with a rare condition through support groups</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best for</strong></p>
+</div>
+<div class="callout-content">
+<p>Hidden or hard-to-reach populations (rare diseases, illegal activities, marginalized groups)!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="choosing-a-sampling-method" class="slide level2">
+<h2>Choosing a Sampling Method</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Good choice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Need to generalize statistically</td>
+<td><strong>Probability</strong> (simple random, stratified)</td>
+</tr>
+<tr class="even">
+<td>Subgroups must be represented</td>
+<td><strong>Stratified</strong></td>
+</tr>
+<tr class="odd">
+<td>Large geographic area, budget limited</td>
+<td><strong>Cluster</strong></td>
+</tr>
+<tr class="even">
+<td>Quick exploratory feedback</td>
+<td><strong>Convenience</strong></td>
+</tr>
+<tr class="odd">
+<td>Expert opinions needed</td>
+<td><strong>Purposive</strong></td>
+</tr>
+<tr class="even">
+<td>Hard-to-reach population</td>
+<td><strong>Snowball</strong></td>
+</tr>
+<tr class="odd">
+<td>Ensure quotas, faster than stratified</td>
+<td><strong>Quota</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best practice</strong></p>
+</div>
+<div class="callout-content">
+<p>Use <strong>probability</strong> for conclusions. Use <strong>non-probability</strong> for exploration, then validate with probability!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sample-size-considerations" class="slide level2">
+<h2>Sample Size Considerations</h2>
+<p><strong>How many people should you survey?</strong></p>
+<p><strong>Factors:</strong></p>
+<ul>
+<li><strong>Population size</strong> (for small populations, you need higher %)</li>
+<li><strong>Desired precision</strong> (margin of error)</li>
+<li><strong>Confidence level</strong> (usually 95%)</li>
+<li><strong>Population variability</strong> (more diverse → larger sample)</li>
+<li><strong>Budget and time</strong></li>
+</ul>
+<p><strong>Rule of thumb:</strong> For simple random sampling, n = 400 gives ±5% margin of error at 95% confidence (large population).</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Online calculators</strong></p>
+</div>
+<div class="callout-content">
+<p>Use sample size calculators (e.g., SurveyMonkey, Qualtrics) to determine n for your needs!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="part-3-understanding-bias" class="slide level2">
+<h2>Part 3: Understanding Bias 🎭</h2>
+<p><strong>Bias</strong> = Systematic error that skews results in one direction.</p>
+<p><strong>Why it matters:</strong></p>
+<ul>
+<li>Bias makes your sample <strong>unrepresentative</strong></li>
+<li>Leads to <strong>wrong conclusions</strong></li>
+<li>Cannot be fixed by increasing sample size</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Key point</strong></p>
+</div>
+<div class="callout-content">
+<p>Random error averages out with larger sample. <strong>Bias does not</strong>!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="types-of-bias-in-surveys" class="slide level2 scrollable">
+<h2>Types of Bias in Surveys</h2>
+<p>We’ll cover:</p>
+<ol type="1">
+<li><strong>Sampling Bias</strong> (who you select)</li>
+<li><strong>Response Bias</strong> (who responds)</li>
+<li><strong>Question Wording Bias</strong> (how you ask)</li>
+<li><strong>Interviewer Bias</strong> (who asks)</li>
+<li><strong>Social Desirability Bias</strong> (what people admit)</li>
+</ol>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Multiple sources</strong></p>
+</div>
+<div class="callout-content">
+<p>Bias can enter at <strong>every stage</strong> of survey process!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sampling-bias" class="slide level2">
+<h2>1. Sampling Bias</h2>
+<p><strong>Definition:</strong> Some members of the population have <strong>zero</strong> or <strong>lower</strong> chance of being selected.</p>
+<p><strong>Common causes:</strong></p>
+<ul>
+<li>Using a biased sampling frame (e.g., phone book misses people without landlines)</li>
+<li>Convenience sampling (only easy-to-reach people)</li>
+<li>Voluntary sampling (only motivated people)</li>
+</ul>
+<p><strong>Example:</strong> Surveying only students in the library about study habits → misses students who study elsewhere!</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 How to avoid</strong></p>
+</div>
+<div class="callout-content">
+<p>Use <strong>probability sampling</strong> with a complete, unbiased sampling frame!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="non-response-bias" class="slide level2">
+<h2>2. Non-Response Bias</h2>
+<p><strong>Definition:</strong> Those who <strong>respond</strong> differ systematically from those who <strong>don’t respond</strong>.</p>
+<p><strong>Common causes:</strong></p>
+<ul>
+<li>Low response rate</li>
+<li>Survey too long or boring</li>
+<li>Topic not interesting to some groups</li>
+<li>Timing (e.g., weekday survey misses night-shift workers)</li>
+</ul>
+<p><strong>Example:</strong> Customer satisfaction survey → happy customers respond, unhappy ones ignore → inflated satisfaction scores!</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 How to reduce</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Keep surveys short</li>
+<li>Offer incentives</li>
+<li>Follow up with reminders</li>
+<li>Make it easy (mobile-friendly, multiple languages)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="question-wording-bias-leading-questions" class="slide level2">
+<h2>3. Question Wording Bias (Leading Questions)</h2>
+<p><strong>Definition:</strong> Question <strong>wording</strong> pushes respondents toward a certain answer.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><p>❌ “Don’t you agree that our excellent customer service is the best?”</p></li>
+<li><p>✅ “How would you rate our customer service?” (1–5 scale)</p></li>
+<li><p>❌ “How much do you love our new product?”</p></li>
+<li><p>✅ “What is your opinion of our new product?”</p></li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Watch out</strong></p>
+</div>
+<div class="callout-content">
+<p>Loaded words (“excellent,” “love”), double negatives, or assumptions!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="interviewer-bias" class="slide level2">
+<h2>4. Interviewer Bias</h2>
+<p><strong>Definition:</strong> Interviewer’s <strong>presence, appearance, or behavior</strong> influences responses.</p>
+<p><strong>Common causes:</strong></p>
+<ul>
+<li>Interviewer’s tone, body language</li>
+<li>Demographic mismatch (e.g., young interviewer, elderly respondent)</li>
+<li>Interviewer expectations (unintentionally guiding answers)</li>
+</ul>
+<p><strong>Example:</strong> Face-to-face survey about sensitive topics (income, health) → respondent gives “socially acceptable” answer to please interviewer.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 How to reduce</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Train interviewers to be neutral</li>
+<li>Use self-administered surveys (online, paper) for sensitive topics</li>
+<li>Standardize interview scripts</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="social-desirability-bias" class="slide level2">
+<h2>5. Social Desirability Bias</h2>
+<p><strong>Definition:</strong> Respondents give answers that make them look <strong>good</strong> or <strong>socially acceptable</strong>, not their true opinion.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Over-report voting, exercise, charitable giving</li>
+<li>Under-report smoking, alcohol, illegal behavior</li>
+</ul>
+<p><strong>How to reduce:</strong></p>
+<ul>
+<li>Ensure <strong>anonymity</strong> and <strong>confidentiality</strong></li>
+<li>Use indirect questions (e.g., “How many of your friends smoke?” rather than “Do you smoke?”)</li>
+<li>Randomized response technique for very sensitive topics</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Especially problematic</strong></p>
+</div>
+<div class="callout-content">
+<p>For health, behavior, income, and political topics!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="other-common-biases" class="slide level2">
+<h2>Other Common Biases</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 44%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bias</th>
+<th>What it is</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recall Bias</strong></td>
+<td>People forget or misremember</td>
+<td>“How many times did you eat fast food last month?”</td>
+</tr>
+<tr class="even">
+<td><strong>Acquiescence Bias</strong></td>
+<td>Tendency to agree (yes-saying)</td>
+<td>“Do you agree?” questions all in one direction</td>
+</tr>
+<tr class="odd">
+<td><strong>Order Bias</strong></td>
+<td>First or last options chosen more</td>
+<td>List of brands; first brand gets more picks</td>
+</tr>
+<tr class="even">
+<td><strong>Extreme Response Bias</strong></td>
+<td>Always pick extreme (1 or 5)</td>
+<td>Some cultures/people avoid middle</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 How to reduce</strong></p>
+</div>
+<div class="callout-content">
+<p>Recall → ask about recent/specific events. Acquiescence → balance positive/negative. Order → randomize!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="avoiding-bias-summary" class="slide level2">
+<h2>Avoiding Bias: Summary</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 34%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Bias risk</th>
+<th>How to avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Sampling</strong></td>
+<td>Sampling bias</td>
+<td>Probability sampling, good frame</td>
+</tr>
+<tr class="even">
+<td><strong>Contact</strong></td>
+<td>Non-response bias</td>
+<td>High response rate, incentives</td>
+</tr>
+<tr class="odd">
+<td><strong>Question design</strong></td>
+<td>Wording bias</td>
+<td>Neutral, clear language</td>
+</tr>
+<tr class="even">
+<td><strong>Administration</strong></td>
+<td>Interviewer bias</td>
+<td>Train interviewers, use self-admin</td>
+</tr>
+<tr class="odd">
+<td><strong>Response</strong></td>
+<td>Social desirability</td>
+<td>Anonymity, indirect questions</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Golden rule</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Test your survey</strong> with a small pilot group before full launch!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="part-4-survey-design-principles" class="slide level2 scrollable">
+<h2>Part 4: Survey Design Principles 📝</h2>
+<p><strong>Good survey design = clear, unbiased, respondent-friendly</strong></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Goals</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>Get <strong>accurate</strong> data (minimize bias)</li>
+<li>Get <strong>complete</strong> data (high response rate)</li>
+<li>Make it <strong>easy</strong> for respondents</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="survey-structure-best-practices" class="slide level2 scrollable">
+<h2>Survey Structure: Best Practices</h2>
+<p><strong>Typical flow:</strong></p>
+<ol type="1">
+<li><strong>Introduction</strong>
+<ul>
+<li>Purpose, who you are, how data will be used</li>
+<li>Confidentiality/anonymity assurance</li>
+<li>Estimated time</li>
+</ul></li>
+<li><strong>Screening questions</strong> (if needed)
+<ul>
+<li>Ensure respondent is in target group</li>
+</ul></li>
+<li><strong>Main questions</strong>
+<ul>
+<li>Start easy, engaging (warm-up)</li>
+<li>Sensitive or demographic questions at the end</li>
+<li>Logical grouping (topic by topic)</li>
+</ul></li>
+<li><strong>Closing</strong>
+<ul>
+<li>Thank you</li>
+<li>Contact info for questions</li>
+<li>Incentive info (if any)</li>
+</ul></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 First impression matters</strong></p>
+</div>
+<div class="callout-content">
+<p>Make intro clear and friendly; ask easy questions first!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-order-flow" class="slide level2 scrollable">
+<h2>Question Order &amp; Flow</h2>
+<p><strong>General principles:</strong></p>
+<ul>
+<li><strong>Easy → Hard:</strong> Start with simple, non-threatening questions</li>
+<li><strong>General → Specific:</strong> Broad questions first, narrow later</li>
+<li><strong>Sensitive last:</strong> Demographics, income, personal info at the end (once rapport is built)</li>
+<li><strong>Logical grouping:</strong> Keep related questions together (all about product A, then product B)</li>
+</ul>
+<p><strong>Example flow:</strong></p>
+<ol type="1">
+<li>“How often do you shop online?” (easy, general)</li>
+<li>“Which online stores do you use?” (specific)</li>
+<li>“What is your annual income?” (sensitive, at end)</li>
+</ol>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Avoid fatigue</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t put all hard/long questions in a row; break up with easier ones!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="survey-length" class="slide level2">
+<h2>Survey Length</h2>
+<p><strong>Optimal length depends on:</strong></p>
+<ul>
+<li><strong>Channel:</strong> Online (5–10 min), phone (10–15 min), face-to-face (longer ok)</li>
+<li><strong>Audience:</strong> Engaged audience can go longer</li>
+<li><strong>Incentive:</strong> Offering reward → people tolerate longer</li>
+</ul>
+<p><strong>Rule of thumb:</strong></p>
+<ul>
+<li>✅ <strong>10 minutes or less</strong> for general online surveys</li>
+<li>✅ <strong>15–20 questions</strong> max (if mixed types)</li>
+<li>❌ Avoid 50+ questions unless essential</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Test it</strong></p>
+</div>
+<div class="callout-content">
+<p>Take the survey yourself and time it. If you’re bored, so will respondents be!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="part-5-question-types-best-practices" class="slide level2 scrollable">
+<h2>Part 5: Question Types &amp; Best Practices 🎯</h2>
+<p><strong>Question types:</strong></p>
+<ol type="1">
+<li><strong>Closed-ended</strong> (fixed response options)</li>
+<li><strong>Open-ended</strong> (free text)</li>
+<li><strong>Rating scales</strong> (Likert, semantic differential, etc.)</li>
+</ol>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Each type has pros/cons and best use cases!</strong></p>
+</div>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+</section>
+<section id="closed-ended-questions" class="slide level2">
+<h2>Closed-Ended Questions</h2>
+<p><strong>Definition:</strong> Respondent selects from <strong>predefined options</strong>.</p>
+<p><strong>Types:</strong></p>
+<ul>
+<li><strong>Dichotomous:</strong> Yes/No, True/False</li>
+<li><strong>Multiple choice:</strong> Select one from list</li>
+<li><strong>Multiple response:</strong> Select all that apply</li>
+<li><strong>Ranking:</strong> Order items by preference</li>
+</ul>
+<p><strong>Pros:</strong> Easy to answer, easy to analyze, comparable<br>
+<strong>Cons:</strong> May miss nuance, force respondent into a box</p>
+<p><strong>Example:</strong> “Which platform do you use most? (a) Facebook (b) Instagram (c) Twitter (d) TikTok”</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Best for</strong></p>
+</div>
+<div class="callout-content">
+<p>Quantitative data, large samples, standardized analysis!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="open-ended-questions" class="slide level2">
+<h2>Open-Ended Questions</h2>
+<p><strong>Definition:</strong> Respondent answers in their <strong>own words</strong> (free text).</p>
+<p><strong>Pros:</strong> Rich detail, unexpected insights, no forced choice<br>
+<strong>Cons:</strong> Time-consuming to answer and analyze, harder to compare</p>
+<p><strong>Example:</strong> “What do you like most about our product?”</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>Exploratory research</li>
+<li>“Why?” questions</li>
+<li>Feedback and suggestions</li>
+<li>When you don’t know all possible answers</li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Use sparingly</strong></p>
+</div>
+<div class="callout-content">
+<p>Too many open-ended questions → low completion rate!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rating-scales-likert-scale" class="slide level2">
+<h2>Rating Scales: Likert Scale</h2>
+<p><strong>Likert Scale:</strong> Agree/disagree on a <strong>5- or 7-point scale</strong>.</p>
+<p><strong>Example:</strong></p>
+<p>“Our customer service is excellent.”</p>
+<p>1 = Strongly disagree | 2 = Disagree | 3 = Neutral | 4 = Agree | 5 = Strongly agree</p>
+<p><strong>Pros:</strong> Easy to answer, ordinal data for analysis<br>
+<strong>Cons:</strong> Neutral option can be a “cop-out”; scale interpretation varies</p>
+<p><strong>Tips:</strong></p>
+<ul>
+<li>Use <strong>odd</strong> (5, 7) for neutral option, or <strong>even</strong> (4, 6) to force a lean</li>
+<li>Keep same scale throughout (don’t mix 5-point and 7-point)</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Most common</strong></p>
+</div>
+<div class="callout-content">
+<p>Widely used in satisfaction, opinion, and attitude surveys!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rating-scales-other-types" class="slide level2">
+<h2>Rating Scales: Other Types</h2>
+<p><strong>Semantic Differential:</strong></p>
+<p>“How would you rate our product?”<br>
+Boring 1 — 2 — 3 — 4 — 5 Exciting</p>
+<p><strong>Numeric Rating:</strong></p>
+<p>“On a scale of 0–10, how likely are you to recommend us?”</p>
+<p><strong>Frequency:</strong></p>
+<p>“How often do you exercise?”<br>
+Never | Rarely | Sometimes | Often | Always</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Match scale to question</strong></p>
+</div>
+<div class="callout-content">
+<p>Use frequency scale for “how often,” semantic for “how you feel,” numeric for NPS/recommendations!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="writing-good-questions-dos-and-donts" class="slide level2">
+<h2>Writing Good Questions: Dos and Don’ts</h2>
+<p><strong>✅ Do:</strong></p>
+<ul>
+<li>Use <strong>simple, clear language</strong> (avoid jargon)</li>
+<li>Ask <strong>one thing at a time</strong> (no double-barreled questions)</li>
+<li>Be <strong>specific</strong> (“last month” vs “recently”)</li>
+<li>Use <strong>neutral wording</strong> (avoid leading)</li>
+<li>Provide <strong>balanced options</strong> (if Agree/Disagree, include both)</li>
+</ul>
+<p><strong>❌ Don’t:</strong></p>
+<ul>
+<li>Use <strong>double negatives</strong> (“Don’t you disagree…?”)</li>
+<li>Ask <strong>two questions in one</strong> (“Do you like our price and quality?”)</li>
+<li>Use <strong>technical terms</strong> unless audience is expert</li>
+<li><strong>Assume</strong> (“Given that our product is the best…”)</li>
+<li>Make it <strong>too long</strong> or <strong>too vague</strong></li>
+</ul>
+</section>
+<section id="examples-good-vs-bad-questions" class="slide level2">
+<h2>Examples: Good vs Bad Questions</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bad ❌</th>
+<th>Good ✅</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Don’t you think our amazing service is great?”</td>
+<td>“How would you rate our service?” (1–5)</td>
+</tr>
+<tr class="even">
+<td>“How satisfied are you with our price and quality?”</td>
+<td>“How satisfied are you with our price?” (separate question for quality)</td>
+</tr>
+<tr class="odd">
+<td>“How often do you eat healthy food?”</td>
+<td>“How many servings of fruits and vegetables did you eat yesterday?”</td>
+</tr>
+<tr class="even">
+<td>“What is your approximate annual income in the general vicinity of last year?”</td>
+<td>“What is your annual household income?” (provide ranges)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Clarity is king</strong></p>
+</div>
+<div class="callout-content">
+<p>If a question confuses you, it will confuse respondents!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="response-options-best-practices" class="slide level2">
+<h2>Response Options: Best Practices</h2>
+<p><strong>Mutually exclusive:</strong> Options should not overlap.</p>
+<ul>
+<li>❌ Age: 18–25, 25–35, 35–45 (25 and 35 appear twice!)</li>
+<li>✅ Age: 18–24, 25–34, 35–44</li>
+</ul>
+<p><strong>Collectively exhaustive:</strong> Cover all possible answers.</p>
+<ul>
+<li>Add “Other” or “None” if needed</li>
+<li>Example: “Which device do you use? (a) Desktop (b) Laptop (c) Tablet (d) Phone (e) Other”</li>
+</ul>
+<p><strong>Balanced:</strong> For agree/disagree, provide equal positive and negative options.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Test options</strong></p>
+</div>
+<div class="callout-content">
+<p>Pilot survey will reveal if options are missing or overlap!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="demographic-questions" class="slide level2">
+<h2>Demographic Questions</h2>
+<p><strong>Purpose:</strong> Segment responses by age, gender, income, location, etc.</p>
+<p><strong>Best practices:</strong></p>
+<ul>
+<li><strong>Place at the end</strong> (unless screening)</li>
+<li>Explain <strong>why</strong> you need it</li>
+<li>Offer <strong>“Prefer not to answer”</strong> option for sensitive items</li>
+<li>Use <strong>ranges</strong> (age: 18–24, income: $20k–$40k) not exact numbers</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>“To better understand our audience, we’d like to know a bit about you. This information is confidential.”</p>
+<ul>
+<li>Gender: Male / Female / Other / Prefer not to say</li>
+<li>Age: 18–24 / 25–34 / 35–44 / 45–54 / 55+</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Only ask what you’ll use</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t collect data you won’t analyze!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="survey-channels-methods" class="slide level2">
+<h2>Survey Channels &amp; Methods</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Channel</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Online (web, email)</strong></td>
+<td>Fast, cheap, wide reach</td>
+<td>Needs internet, may miss offline populations</td>
+<td>Tech-savvy, large samples</td>
+</tr>
+<tr class="even">
+<td><strong>Phone</strong></td>
+<td>Personal, can clarify</td>
+<td>Expensive, time-consuming, declining response rates</td>
+<td>Older audiences, complex topics</td>
+</tr>
+<tr class="odd">
+<td><strong>Face-to-face</strong></td>
+<td>Highest response, rich data</td>
+<td>Very expensive, time-consuming, interviewer bias</td>
+<td>In-depth, sensitive topics</td>
+</tr>
+<tr class="even">
+<td><strong>Paper (mail, in-person)</strong></td>
+<td>No tech needed</td>
+<td>Slow, data entry needed, low response rate</td>
+<td>Offline populations, older audiences</td>
+</tr>
+<tr class="odd">
+<td><strong>Mobile app/SMS</strong></td>
+<td>Convenient, immediate</td>
+<td>Short surveys only, limited question types</td>
+<td>Quick feedback, location-based</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Mix channels if needed</strong></p>
+</div>
+<div class="callout-content">
+<p>E.g., online for most, phone follow-up for non-responders!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="pilot-testing-your-survey" class="slide level2">
+<h2>Pilot Testing Your Survey</h2>
+<p><strong>Before launching to full sample, test with a small group (10–30 people):</strong></p>
+<p><strong>Check for:</strong></p>
+<ul>
+<li><strong>Clarity:</strong> Do questions make sense?</li>
+<li><strong>Flow:</strong> Is order logical? Any fatigue?</li>
+<li><strong>Technical issues:</strong> Survey platform works?</li>
+<li><strong>Timing:</strong> How long does it take?</li>
+<li><strong>Response patterns:</strong> Any questions everyone skips or answers the same?</li>
+</ul>
+<p><strong>Revise based on feedback, then launch!</strong></p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Don’t skip this step</strong></p>
+</div>
+<div class="callout-content">
+<p>Pilot testing catches problems before they ruin your data!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="ethics-in-survey-research" class="slide level2">
+<h2>Ethics in Survey Research</h2>
+<p><strong>Key principles:</strong></p>
+<ul>
+<li><strong>Informed consent:</strong> Respondents know what they’re participating in</li>
+<li><strong>Confidentiality/Anonymity:</strong> Protect respondent identity and data</li>
+<li><strong>No harm:</strong> Don’t ask questions that distress or endanger</li>
+<li><strong>Voluntary:</strong> Respondents can opt out or skip questions</li>
+<li><strong>Honest reporting:</strong> Report all results, not just what you like</li>
+</ul>
+<p><strong>Example:</strong> “Your responses are anonymous and will only be used for research purposes.”</p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>⚠️ Check your institution</strong></p>
+</div>
+<div class="callout-content">
+<p>Many universities require ethics approval (IRB) for surveys involving human subjects!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="survey-design-checklist" class="slide level2">
+<h2>Survey Design Checklist ✅</h2>
+<p>Before you launch:</p>
+<ul>
+<li>☑️ <strong>Clear objective:</strong> What question am I answering?</li>
+<li>☑️ <strong>Right sample:</strong> Probability method if generalizing; adequate size</li>
+<li>☑️ <strong>Unbiased questions:</strong> Neutral wording, no leading</li>
+<li>☑️ <strong>Logical flow:</strong> Easy → hard, general → specific, sensitive at end</li>
+<li>☑️ <strong>Appropriate length:</strong> &lt;10 min for online, &lt;20 questions</li>
+<li>☑️ <strong>Balanced options:</strong> Mutually exclusive, collectively exhaustive</li>
+<li>☑️ <strong>Pilot tested:</strong> Small group feedback</li>
+<li>☑️ <strong>Ethics:</strong> Consent, confidentiality, voluntary</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Quality over quantity</strong></p>
+</div>
+<div class="callout-content">
+<p>Better to have 300 good responses than 3,000 biased ones!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="practice-exercise-1" class="slide level2 scrollable">
+<h2>Practice Exercise 1 🏋️</h2>
+<p><strong>Identify the sampling method:</strong></p>
+<ol type="1">
+<li>A researcher divides a company’s employees by department, then randomly selects 20% from each department.</li>
+<li>A pollster stands outside a shopping mall and surveys the first 100 people who agree to participate.</li>
+<li>A health study starts with 10 patients with a rare disease and asks them to refer others with the same condition.</li>
+<li>A school randomly selects 5 out of 20 classrooms and surveys all students in those 5 classrooms.</li>
+</ol>
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>✏️ Your Turn</strong></p>
+</div>
+<div class="callout-content">
+<p>Take 3 minutes. Discuss with a partner!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sample-answer-exercise-1" class="slide level2 scrollable">
+<h2>Sample Answer: Exercise 1</h2>
+<ol type="1">
+<li><strong>Stratified sampling</strong> (divide by department, sample from each)</li>
+<li><strong>Convenience sampling</strong> (whoever is available and agrees)</li>
+<li><strong>Snowball sampling</strong> (referrals from initial participants)</li>
+<li><strong>Cluster sampling</strong> (randomly select classrooms, survey all in selected classrooms)</li>
+</ol>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Notice</strong></p>
+</div>
+<div class="callout-content">
+<p>1 and 4 are probability methods; 2 and 3 are non-probability!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="practice-exercise-2" class="slide level2 scrollable">
+<h2>Practice Exercise 2 🏋️</h2>
+<p><strong>Identify the bias:</strong></p>
+<ol type="1">
+<li>An online survey about internet usage is shared only on Facebook.</li>
+<li>“Don’t you agree that our competitor’s product is inferior to ours?”</li>
+<li>A survey about salary sent via email gets responses only from high earners (low earners too busy to respond).</li>
+<li>A face-to-face interview about alcohol consumption with a visibly disapproving interviewer.</li>
+</ol>
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>✏️ Your Turn (3 minutes)</strong></p>
+</div>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+</section>
+<section id="sample-answer-exercise-2" class="slide level2 scrollable">
+<h2>Sample Answer: Exercise 2</h2>
+<ol type="1">
+<li><strong>Sampling bias</strong> (only Facebook users, misses non-Facebook users)</li>
+<li><strong>Question wording bias / leading question</strong> (pushes toward “agree”)</li>
+<li><strong>Non-response bias</strong> (responders differ from non-responders)</li>
+<li><strong>Interviewer bias + social desirability bias</strong> (respondent may under-report to please interviewer)</li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Real surveys often have multiple biases</strong></p>
+</div>
+<div class="callout-content">
+<p>Always evaluate at every stage!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="practice-exercise-3" class="slide level2 scrollable">
+<h2>Practice Exercise 3 🏋️</h2>
+<p><strong>Improve these questions:</strong></p>
+<ol type="1">
+<li>“How satisfied are you with our price and delivery speed?”</li>
+<li>“Don’t you think our product is the best on the market?”</li>
+<li>“How often do you eat healthy food?”</li>
+<li>Age: 18–25, 25–35, 35–45, 45+</li>
+</ol>
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>✏️ Your Turn (4 minutes)</strong></p>
+</div>
+<div class="callout-content">
+<p>Work individually or in pairs!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sample-answer-exercise-3" class="slide level2 scrollable">
+<h2>Sample Answer: Exercise 3</h2>
+<ol type="1">
+<li><p>❌ <strong>Double-barreled.</strong> ✅ Split into two questions:</p>
+<ul>
+<li>“How satisfied are you with our pricing?”</li>
+<li>“How satisfied are you with our delivery speed?”</li>
+</ul></li>
+<li><p>❌ <strong>Leading.</strong> ✅ “How would you rate our product compared to competitors?” (Much worse — Worse — Same — Better — Much better)</p></li>
+<li><p>❌ <strong>Vague (“healthy”).</strong> ✅ “How many servings of fruits and vegetables did you eat yesterday?”</p></li>
+<li><p>❌ <strong>Overlapping.</strong> ✅ 18–24, 25–34, 35–44, 45+</p></li>
+</ol>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💡 Clarity and precision</strong></p>
+</div>
+<div class="callout-content">
+<p>Every word matters in survey design!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="key-takeaways" class="slide level2">
+<h2>Key Takeaways 🎯</h2>
+<p><strong>Sampling Strategies</strong></p>
+<ul>
+<li><strong>Probability</strong> (random, stratified, cluster, systematic) → generalizable, rigorous</li>
+<li><strong>Non-probability</strong> (convenience, purposive, quota, snowball) → faster, exploratory</li>
+<li>Choose based on goals, budget, population</li>
+</ul>
+<p><strong>Bias</strong></p>
+<ul>
+<li><strong>Sampling bias</strong> (wrong people selected)</li>
+<li><strong>Non-response bias</strong> (responders differ from non-responders)</li>
+<li><strong>Question wording bias</strong> (leading questions)</li>
+<li><strong>Interviewer &amp; social desirability bias</strong> (respondent doesn’t answer honestly)</li>
+<li><strong>Reduce bias:</strong> probability sampling, neutral questions, anonymity, pilot test</li>
+</ul>
+<p><strong>Survey Design</strong></p>
+<ul>
+<li><strong>Structure:</strong> Intro → easy questions → main → sensitive/demographics → close</li>
+<li><strong>Questions:</strong> Clear, one topic, neutral, specific</li>
+<li><strong>Options:</strong> Mutually exclusive, collectively exhaustive, balanced</li>
+<li><strong>Length:</strong> &lt;10 min online, &lt;20 questions</li>
+<li><strong>Pilot test</strong> before launch!</li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>💪 Next step</strong></p>
+</div>
+<div class="callout-content">
+<p>Design a short survey (5–10 questions) on a topic of your choice. Apply all principles we’ve covered!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="practical-tips-for-your-survey-project" class="slide level2 scrollable">
+<h2>Practical Tips for Your Survey Project 📋</h2>
+<p><strong>Starting your survey:</strong></p>
+<ol type="1">
+<li><strong>Define your goal:</strong> What do you want to learn?</li>
+<li><strong>Identify population:</strong> Who should you survey?</li>
+<li><strong>Choose sampling method:</strong> Probability if generalizing, non-probability if exploratory</li>
+<li><strong>Draft questions:</strong> Keep it short, clear, unbiased</li>
+<li><strong>Design flow:</strong> Intro → warm-up → main → demographics → close</li>
+<li><strong>Select platform:</strong> Google Forms, SurveyMonkey, Qualtrics, etc.</li>
+<li><strong>Pilot test:</strong> 10–20 people, revise based on feedback</li>
+<li><strong>Launch:</strong> Distribute, remind, collect</li>
+<li><strong>Analyze:</strong> Clean data, check for bias, analyze by demographics</li>
+<li><strong>Report:</strong> Share findings, acknowledge limitations</li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Remember</strong></p>
+</div>
+<div class="callout-content">
+<p>A good survey takes planning. Don’t rush it!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="additional-resources" class="slide level2">
+<h2>Additional Resources 📚</h2>
+<p><strong>Recommended reading:</strong></p>
+<ul>
+<li><em>Survey Research Methods</em> by Floyd J. Fowler</li>
+<li><em>Designing Surveys</em> by Ronald Czaja &amp; Johnny Blair</li>
+<li>Pew Research Center’s Survey Methodology articles</li>
+</ul>
+<p><strong>Online tools:</strong></p>
+<ul>
+<li>Google Forms (free, simple)</li>
+<li>SurveyMonkey (freemium, popular)</li>
+<li>Qualtrics (academic, professional)</li>
+<li>Sample size calculators (SurveyMonkey, Raosoft)</li>
+</ul>
+<p><strong>Practice:</strong></p>
+<ul>
+<li>Take surveys and critique them</li>
+<li>Analyze published surveys for bias</li>
+<li>Design a survey for a real project</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📋 Keep learning</strong></p>
+</div>
+<div class="callout-content">
+<p>Survey design is both art and science. Practice makes perfect!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="thanks" class="slide level2">
+<h2>Thanks 🤗</h2>
+<div style="text-align:center; margin-top: 40px;">
+<p style="font-size: 1.2em; color: #2980b9;">
+Questions?
+</p>
+<p style="color: #666;">
+Sampling • Bias • Survey Design • Question Types
+</p>
+<p style="color: #888; margin-top: 20px;">
+Good surveys = Good data = Good decisions!
+</p>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="session78_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="session78_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="session78_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="session78_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

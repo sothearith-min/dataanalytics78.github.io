@@ -1,0 +1,1052 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    transition: fade
+    font-family: 'Trebuchet MS'
+    scrollable: true
+---
+
+<style> 
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: #2980b9;
+}
+.reveal {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+</style>
+
+<div style="text-align:center; margin-top: 40px; line-height: 1.4;">
+  
+  <img src="https://pelprek.sgp1.digitaloceanspaces.com/banner/3489/148825024520275.png" alt="PPIU Logo" style="width: 400px; margin-bottom: 20px;">
+  
+  <h1 style="font-size: 3em; font-weight: 700; color: #2980b9; margin-bottom: 10px;">
+    Data Analytics
+  </h1>
+
+  <h2 style="font-size: 1.6em; font-weight: 500; color: #555;">
+    Survey Design & Sampling
+  </h2>
+
+  <div style="border-bottom: 4px solid #e74c3c; width: 45%; margin: 18px auto;"></div>
+<h3 style="margin-top: 25px; font-weight: 700; color: #050E3C">
+  By: MIN Sothearith
+</h3>
+
+<h4 style="font-weight: 700; color: #666;">
+  Phnom Penh International University
+</h4>
+
+</div>
+
+## Quick Recap: Last Week 📚
+
+**What We Covered:**
+
+- Primary vs secondary data sources
+- Quantitative vs qualitative data
+- Levels of measurement: nominal, ordinal, interval, ratio
+- Data formats (CSV, JSON, XML, Excel)
+
+::: {.callout-note}
+## 🎯 Remember
+The **quality** of your data depends on how you **collect** it!
+:::
+
+## Today's Learning Objectives
+
+**By the end of this session, you will:**
+
+- Understand different **sampling strategies** and when to use each
+- Identify and avoid common sources of **bias** in surveys
+- Design effective **survey questions** that get reliable answers
+- Apply best practices for **questionnaire structure** and flow
+- Recognize the connection between sampling, bias, and survey quality
+
+::: {.callout-tip}
+**⏱️ Time:** ~90 minutes | **📝 Activity:** Hands-on survey design practice!
+:::
+
+## Session Roadmap 🗺️
+
+1. **Part 1:** Introduction to Surveys & Why They Matter
+2. **Part 2:** Sampling Strategies (Probability & Non-Probability)
+3. **Part 3:** Understanding and Avoiding Bias
+4. **Part 4:** Survey Design Principles
+5. **Part 5:** Question Types & Best Practices
+6. Practice & Takeaways
+
+::: {.callout-note}
+## 📋 We focus on **sampling**, **bias**, and **effective survey design**!
+:::
+
+## Part 1: Why Surveys Matter 📊
+
+::: {style="text-align:center; margin-top: 60px;"}
+### "Ask the wrong people the wrong questions..." {style="color: #2980b9; font-size: 1.8em;"}
+
+...and you get wrong answers!
+:::
+
+::: {.callout-important}
+## 💡 Key Insight
+Surveys are a **primary data collection** method. Good survey design = good data = reliable insights!
+:::
+
+## What Makes a Good Survey?
+
+**Three Critical Components:**
+
+::: {.columns}
+::: {.column width="33%"}
+### 1. **Right Sample**
+Who you ask
+
+- Representative of population
+- Sufficient size
+- Unbiased selection
+:::
+
+::: {.column width="33%"}
+### 2. **Right Questions**
+What you ask
+
+- Clear and unbiased
+- Appropriate response options
+- Logical flow
+:::
+
+::: {.column width="33%"}
+### 3. **Right Method**
+How you ask
+
+- Appropriate channel
+- Good timing
+- Minimize bias
+:::
+:::
+
+::: {.callout-warning}
+## ⚠️ Weak in any area?
+Your results will be unreliable, no matter how sophisticated your analysis!
+:::
+
+## Part 2: Sampling Strategies 🎯
+
+**Sampling** = Selecting a **subset** of a **population** to study.
+
+**Why sample?**
+
+- ✅ **Cost-effective:** Can't survey everyone (time, money)
+- ✅ **Faster:** Get results quicker than a census
+- ✅ **Practical:** Some populations are huge or hard to reach
+- ✅ **Statistical validity:** A good sample can represent the whole population
+
+::: {.callout-note}
+## 📋 Key terms
+**Population** = entire group you want to understand  
+**Sample** = subset you actually study  
+**Sampling frame** = list or source from which you select
+:::
+
+## Sampling: Key Concepts
+
+**Sample Size (n):**
+
+- Larger sample → more precise estimates
+- But diminishing returns (1000 → 2000 less gain than 100 → 200)
+- Depends on population variability and desired precision
+
+**Representativeness:**
+
+- Sample should **reflect** the population characteristics
+- Age, gender, region, behavior patterns, etc.
+- Non-representative sample → biased results
+
+::: {.callout-important}
+## 💡 Remember
+Big sample ≠ good sample. A biased sample of 10,000 is worse than a representative sample of 500!
+:::
+
+## Two Main Sampling Approaches
+
+::: {.columns}
+::: {.column width="50%"}
+### **Probability Sampling**
+
+Every member has a **known, non-zero** chance of selection
+
+**Advantages:**
+
+- Can calculate sampling error
+- Generalizable to population
+- Scientifically rigorous
+
+**Disadvantages:**
+
+- Requires sampling frame
+- More expensive/time-consuming
+- May be impractical
+:::
+
+::: {.column width="50%"}
+### **Non-Probability Sampling**
+
+Selection based on **convenience**, **judgment**, or **availability**
+
+**Advantages:**
+
+- Faster and cheaper
+- Easier to implement
+- Good for exploratory research
+
+**Disadvantages:**
+
+- Cannot generalize statistically
+- Unknown bias
+- No sampling error calculation
+:::
+:::
+
+## Probability Sampling Methods
+
+### 1. **Simple Random Sampling**
+
+Every member has **equal** chance of selection (like drawing names from a hat).
+
+**How:** Number everyone, use random number generator to select.
+
+**Pros:** Unbiased, simple concept  
+**Cons:** Need complete list; may miss subgroups
+
+**Example:** Select 200 students from 2,000 by random number
+
+::: {.callout-tip}
+## 🎯 Best for
+Homogeneous populations where you have a complete list!
+:::
+
+## Probability Sampling Methods (cont.)
+
+### 2. **Systematic Sampling**
+
+Select every **k-th** member from a list.
+
+**How:** Choose starting point randomly, then every 10th, 20th, etc.
+
+**Pros:** Simple, spreads across list  
+**Cons:** If list has pattern, may introduce bias
+
+**Example:** Every 5th customer entering a store
+
+::: {.callout-warning}
+## ⚠️ Watch out
+If list is ordered (e.g., by department), systematic sampling might skip certain groups!
+:::
+
+## Probability Sampling Methods (cont.)
+
+### 3. **Stratified Sampling**
+
+Divide population into **strata** (subgroups), then sample from each stratum.
+
+**How:** 
+
+1. Divide by key characteristic (age, region, etc.)
+2. Sample randomly within each stratum
+3. Can use proportional or equal allocation
+
+**Pros:** Ensures representation of subgroups, more precise  
+**Cons:** Need to know strata in advance
+
+**Example:** Survey 100 students: 40 Year 1, 30 Year 2, 30 Year 3 (proportional to enrollment)
+
+::: {.callout-tip}
+## 🎯 Best for
+When subgroups are important and you want to ensure all are represented!
+:::
+
+## Probability Sampling Methods (cont.)
+
+### 4. **Cluster Sampling**
+
+Divide population into **clusters** (groups), randomly select clusters, survey **all** in selected clusters.
+
+**How:**
+
+1. Divide into natural groups (schools, villages, etc.)
+2. Randomly select clusters
+3. Survey everyone in selected clusters (or sub-sample within)
+
+**Pros:** Cost-effective for geographically spread populations  
+**Cons:** Higher sampling error if clusters are very different
+
+**Example:** Select 10 schools from 100, survey all students in those 10
+
+::: {.callout-note}
+## 📋 Difference from stratified
+**Stratified** = sample from all strata. **Cluster** = sample entire clusters, not all clusters!
+:::
+
+## Stratified vs Cluster: Visual Comparison
+
+| Aspect | **Stratified** | **Cluster** |
+|--------|----------------|-------------|
+| **Division** | By key characteristic (age, gender) | By natural groups (location, class) |
+| **Sampling** | Sample from **every** stratum | Sample **some** clusters only |
+| **Within group** | Random selection | Usually all members (or sub-sample) |
+| **Goal** | Ensure subgroup representation | Reduce cost/logistics |
+| **Precision** | Usually higher | Usually lower |
+
+::: {.callout-important}
+## 💡 Rule of thumb
+**Stratified** when subgroups matter. **Cluster** when logistics/cost matter!
+:::
+
+## Non-Probability Sampling Methods
+
+### 1. **Convenience Sampling**
+
+Select whoever is **easiest** to reach.
+
+**How:** Survey people in the cafeteria, on the street, your friends
+
+**Pros:** Fast, cheap  
+**Cons:** High bias, not representative
+
+**Example:** Surveying classmates about university policy
+
+::: {.callout-warning}
+## ⚠️ Caution
+Good for quick feedback, but **cannot generalize** to population!
+:::
+
+## Non-Probability Sampling Methods (cont.)
+
+### 2. **Purposive (Judgmental) Sampling**
+
+**Researcher** selects participants based on judgment of who is "typical" or "informative."
+
+**How:** Choose experts, key informants, or specific characteristics
+
+**Pros:** Good for qualitative, exploratory research  
+**Cons:** Subjective, bias from researcher's judgment
+
+**Example:** Interview 10 experienced teachers about curriculum
+
+::: {.callout-tip}
+## 🎯 Best for
+Qualitative research, expert opinions, case studies!
+:::
+
+## Non-Probability Sampling Methods (cont.)
+
+### 3. **Quota Sampling**
+
+Like stratified, but selection within quotas is **non-random**.
+
+**How:** Set quotas (e.g., 50 males, 50 females), fill by convenience
+
+**Pros:** Ensures subgroup representation, faster than stratified  
+**Cons:** Bias within quotas, no random selection
+
+**Example:** Survey 100 people: 50 male, 50 female, stopping when quota is filled
+
+::: {.callout-note}
+## 📋 Difference from stratified
+**Stratified** = random within strata. **Quota** = convenience within quotas!
+:::
+
+## Non-Probability Sampling Methods (cont.)
+
+### 4. **Snowball Sampling**
+
+Participants **refer** others (like a snowball growing).
+
+**How:** Start with a few, ask them to refer others, and so on
+
+**Pros:** Good for hard-to-reach populations  
+**Cons:** Bias (network effects), not representative
+
+**Example:** Surveying people with a rare condition through support groups
+
+::: {.callout-tip}
+## 🎯 Best for
+Hidden or hard-to-reach populations (rare diseases, illegal activities, marginalized groups)!
+:::
+
+## Choosing a Sampling Method
+
+| Situation | Good choice |
+|-----------|-------------|
+| Need to generalize statistically | **Probability** (simple random, stratified) |
+| Subgroups must be represented | **Stratified** |
+| Large geographic area, budget limited | **Cluster** |
+| Quick exploratory feedback | **Convenience** |
+| Expert opinions needed | **Purposive** |
+| Hard-to-reach population | **Snowball** |
+| Ensure quotas, faster than stratified | **Quota** |
+
+::: {.callout-important}
+## 🎯 Best practice
+Use **probability** for conclusions. Use **non-probability** for exploration, then validate with probability!
+:::
+
+## Sample Size Considerations
+
+**How many people should you survey?**
+
+**Factors:**
+
+- **Population size** (for small populations, you need higher %)
+- **Desired precision** (margin of error)
+- **Confidence level** (usually 95%)
+- **Population variability** (more diverse → larger sample)
+- **Budget and time**
+
+**Rule of thumb:** For simple random sampling, n = 400 gives ±5% margin of error at 95% confidence (large population).
+
+::: {.callout-note}
+## 📋 Online calculators
+Use sample size calculators (e.g., SurveyMonkey, Qualtrics) to determine n for your needs!
+:::
+
+## Part 3: Understanding Bias 🎭
+
+**Bias** = Systematic error that skews results in one direction.
+
+**Why it matters:**
+
+- Bias makes your sample **unrepresentative**
+- Leads to **wrong conclusions**
+- Cannot be fixed by increasing sample size
+
+::: {.callout-important}
+## 💡 Key point
+Random error averages out with larger sample. **Bias does not**!
+:::
+
+## Types of Bias in Surveys
+
+We'll cover:
+
+1. **Sampling Bias** (who you select)
+2. **Response Bias** (who responds)
+3. **Question Wording Bias** (how you ask)
+4. **Interviewer Bias** (who asks)
+5. **Social Desirability Bias** (what people admit)
+
+::: {.callout-warning}
+## ⚠️ Multiple sources
+Bias can enter at **every stage** of survey process!
+:::
+
+## 1. Sampling Bias
+
+**Definition:** Some members of the population have **zero** or **lower** chance of being selected.
+
+**Common causes:**
+
+- Using a biased sampling frame (e.g., phone book misses people without landlines)
+- Convenience sampling (only easy-to-reach people)
+- Voluntary sampling (only motivated people)
+
+**Example:** Surveying only students in the library about study habits → misses students who study elsewhere!
+
+::: {.callout-tip}
+## 🎯 How to avoid
+Use **probability sampling** with a complete, unbiased sampling frame!
+:::
+
+## 2. Non-Response Bias
+
+**Definition:** Those who **respond** differ systematically from those who **don't respond**.
+
+**Common causes:**
+
+- Low response rate
+- Survey too long or boring
+- Topic not interesting to some groups
+- Timing (e.g., weekday survey misses night-shift workers)
+
+**Example:** Customer satisfaction survey → happy customers respond, unhappy ones ignore → inflated satisfaction scores!
+
+::: {.callout-tip}
+## 🎯 How to reduce
+- Keep surveys short
+- Offer incentives
+- Follow up with reminders
+- Make it easy (mobile-friendly, multiple languages)
+:::
+
+## 3. Question Wording Bias (Leading Questions)
+
+**Definition:** Question **wording** pushes respondents toward a certain answer.
+
+**Examples:**
+
+- ❌ "Don't you agree that our excellent customer service is the best?"
+- ✅ "How would you rate our customer service?" (1–5 scale)
+
+- ❌ "How much do you love our new product?"
+- ✅ "What is your opinion of our new product?"
+
+::: {.callout-warning}
+## ⚠️ Watch out
+Loaded words ("excellent," "love"), double negatives, or assumptions!
+:::
+
+## 4. Interviewer Bias
+
+**Definition:** Interviewer's **presence, appearance, or behavior** influences responses.
+
+**Common causes:**
+
+- Interviewer's tone, body language
+- Demographic mismatch (e.g., young interviewer, elderly respondent)
+- Interviewer expectations (unintentionally guiding answers)
+
+**Example:** Face-to-face survey about sensitive topics (income, health) → respondent gives "socially acceptable" answer to please interviewer.
+
+::: {.callout-tip}
+## 🎯 How to reduce
+- Train interviewers to be neutral
+- Use self-administered surveys (online, paper) for sensitive topics
+- Standardize interview scripts
+:::
+
+## 5. Social Desirability Bias
+
+**Definition:** Respondents give answers that make them look **good** or **socially acceptable**, not their true opinion.
+
+**Examples:**
+
+- Over-report voting, exercise, charitable giving
+- Under-report smoking, alcohol, illegal behavior
+
+**How to reduce:**
+
+- Ensure **anonymity** and **confidentiality**
+- Use indirect questions (e.g., "How many of your friends smoke?" rather than "Do you smoke?")
+- Randomized response technique for very sensitive topics
+
+::: {.callout-note}
+## 📋 Especially problematic
+For health, behavior, income, and political topics!
+:::
+
+## Other Common Biases
+
+| Bias | What it is | Example |
+|------|------------|---------|
+| **Recall Bias** | People forget or misremember | "How many times did you eat fast food last month?" |
+| **Acquiescence Bias** | Tendency to agree (yes-saying) | "Do you agree?" questions all in one direction |
+| **Order Bias** | First or last options chosen more | List of brands; first brand gets more picks |
+| **Extreme Response Bias** | Always pick extreme (1 or 5) | Some cultures/people avoid middle |
+
+::: {.callout-tip}
+## 🎯 How to reduce
+Recall → ask about recent/specific events. Acquiescence → balance positive/negative. Order → randomize!
+:::
+
+## Avoiding Bias: Summary
+
+| Stage | Bias risk | How to avoid |
+|-------|-----------|--------------|
+| **Sampling** | Sampling bias | Probability sampling, good frame |
+| **Contact** | Non-response bias | High response rate, incentives |
+| **Question design** | Wording bias | Neutral, clear language |
+| **Administration** | Interviewer bias | Train interviewers, use self-admin |
+| **Response** | Social desirability | Anonymity, indirect questions |
+
+::: {.callout-important}
+## 💡 Golden rule
+**Test your survey** with a small pilot group before full launch!
+:::
+
+## Part 4: Survey Design Principles 📝
+
+**Good survey design = clear, unbiased, respondent-friendly**
+
+::: {.callout-note}
+## 📋 Goals
+1. Get **accurate** data (minimize bias)
+2. Get **complete** data (high response rate)
+3. Make it **easy** for respondents
+:::
+
+## Survey Structure: Best Practices
+
+**Typical flow:**
+
+1. **Introduction**
+   - Purpose, who you are, how data will be used
+   - Confidentiality/anonymity assurance
+   - Estimated time
+
+2. **Screening questions** (if needed)
+   - Ensure respondent is in target group
+
+3. **Main questions**
+   - Start easy, engaging (warm-up)
+   - Sensitive or demographic questions at the end
+   - Logical grouping (topic by topic)
+
+4. **Closing**
+   - Thank you
+   - Contact info for questions
+   - Incentive info (if any)
+
+::: {.callout-tip}
+## 🎯 First impression matters
+Make intro clear and friendly; ask easy questions first!
+:::
+
+## Question Order & Flow
+
+**General principles:**
+
+- **Easy → Hard:** Start with simple, non-threatening questions
+- **General → Specific:** Broad questions first, narrow later
+- **Sensitive last:** Demographics, income, personal info at the end (once rapport is built)
+- **Logical grouping:** Keep related questions together (all about product A, then product B)
+
+**Example flow:**
+
+1. "How often do you shop online?" (easy, general)
+2. "Which online stores do you use?" (specific)
+3. "What is your annual income?" (sensitive, at end)
+
+::: {.callout-warning}
+## ⚠️ Avoid fatigue
+Don't put all hard/long questions in a row; break up with easier ones!
+:::
+
+## Survey Length
+
+**Optimal length depends on:**
+
+- **Channel:** Online (5–10 min), phone (10–15 min), face-to-face (longer ok)
+- **Audience:** Engaged audience can go longer
+- **Incentive:** Offering reward → people tolerate longer
+
+**Rule of thumb:**
+
+- ✅ **10 minutes or less** for general online surveys
+- ✅ **15–20 questions** max (if mixed types)
+- ❌ Avoid 50+ questions unless essential
+
+::: {.callout-important}
+## 💡 Test it
+Take the survey yourself and time it. If you're bored, so will respondents be!
+:::
+
+## Part 5: Question Types & Best Practices 🎯
+
+**Question types:**
+
+1. **Closed-ended** (fixed response options)
+2. **Open-ended** (free text)
+3. **Rating scales** (Likert, semantic differential, etc.)
+
+::: {.callout-note}
+## 📋 Each type has pros/cons and best use cases!
+:::
+
+## Closed-Ended Questions
+
+**Definition:** Respondent selects from **predefined options**.
+
+**Types:**
+
+- **Dichotomous:** Yes/No, True/False
+- **Multiple choice:** Select one from list
+- **Multiple response:** Select all that apply
+- **Ranking:** Order items by preference
+
+**Pros:** Easy to answer, easy to analyze, comparable  
+**Cons:** May miss nuance, force respondent into a box
+
+**Example:** "Which platform do you use most? (a) Facebook (b) Instagram (c) Twitter (d) TikTok"
+
+::: {.callout-tip}
+## 🎯 Best for
+Quantitative data, large samples, standardized analysis!
+:::
+
+## Open-Ended Questions
+
+**Definition:** Respondent answers in their **own words** (free text).
+
+**Pros:** Rich detail, unexpected insights, no forced choice  
+**Cons:** Time-consuming to answer and analyze, harder to compare
+
+**Example:** "What do you like most about our product?"
+
+**When to use:**
+
+- Exploratory research
+- "Why?" questions
+- Feedback and suggestions
+- When you don't know all possible answers
+
+::: {.callout-warning}
+## ⚠️ Use sparingly
+Too many open-ended questions → low completion rate!
+:::
+
+## Rating Scales: Likert Scale
+
+**Likert Scale:** Agree/disagree on a **5- or 7-point scale**.
+
+**Example:**
+
+"Our customer service is excellent."
+
+1 = Strongly disagree | 2 = Disagree | 3 = Neutral | 4 = Agree | 5 = Strongly agree
+
+**Pros:** Easy to answer, ordinal data for analysis  
+**Cons:** Neutral option can be a "cop-out"; scale interpretation varies
+
+**Tips:**
+
+- Use **odd** (5, 7) for neutral option, or **even** (4, 6) to force a lean
+- Keep same scale throughout (don't mix 5-point and 7-point)
+
+::: {.callout-note}
+## 📋 Most common
+Widely used in satisfaction, opinion, and attitude surveys!
+:::
+
+## Rating Scales: Other Types
+
+**Semantic Differential:**
+
+"How would you rate our product?"  
+Boring 1 — 2 — 3 — 4 — 5 Exciting
+
+**Numeric Rating:**
+
+"On a scale of 0–10, how likely are you to recommend us?"
+
+**Frequency:**
+
+"How often do you exercise?"  
+Never | Rarely | Sometimes | Often | Always
+
+::: {.callout-tip}
+## 🎯 Match scale to question
+Use frequency scale for "how often," semantic for "how you feel," numeric for NPS/recommendations!
+:::
+
+## Writing Good Questions: Dos and Don'ts
+
+**✅ Do:**
+
+- Use **simple, clear language** (avoid jargon)
+- Ask **one thing at a time** (no double-barreled questions)
+- Be **specific** ("last month" vs "recently")
+- Use **neutral wording** (avoid leading)
+- Provide **balanced options** (if Agree/Disagree, include both)
+
+**❌ Don't:**
+
+- Use **double negatives** ("Don't you disagree...?")
+- Ask **two questions in one** ("Do you like our price and quality?")
+- Use **technical terms** unless audience is expert
+- **Assume** ("Given that our product is the best...")
+- Make it **too long** or **too vague**
+
+## Examples: Good vs Bad Questions
+
+| Bad ❌ | Good ✅ |
+|--------|---------|
+| "Don't you think our amazing service is great?" | "How would you rate our service?" (1–5) |
+| "How satisfied are you with our price and quality?" | "How satisfied are you with our price?" (separate question for quality) |
+| "How often do you eat healthy food?" | "How many servings of fruits and vegetables did you eat yesterday?" |
+| "What is your approximate annual income in the general vicinity of last year?" | "What is your annual household income?" (provide ranges) |
+
+::: {.callout-important}
+## 💡 Clarity is king
+If a question confuses you, it will confuse respondents!
+:::
+
+## Response Options: Best Practices
+
+**Mutually exclusive:** Options should not overlap.
+
+- ❌ Age: 18–25, 25–35, 35–45 (25 and 35 appear twice!)
+- ✅ Age: 18–24, 25–34, 35–44
+
+**Collectively exhaustive:** Cover all possible answers.
+
+- Add "Other" or "None" if needed
+- Example: "Which device do you use? (a) Desktop (b) Laptop (c) Tablet (d) Phone (e) Other"
+
+**Balanced:** For agree/disagree, provide equal positive and negative options.
+
+::: {.callout-tip}
+## 🎯 Test options
+Pilot survey will reveal if options are missing or overlap!
+:::
+
+## Demographic Questions
+
+**Purpose:** Segment responses by age, gender, income, location, etc.
+
+**Best practices:**
+
+- **Place at the end** (unless screening)
+- Explain **why** you need it
+- Offer **"Prefer not to answer"** option for sensitive items
+- Use **ranges** (age: 18–24, income: $20k–$40k) not exact numbers
+
+**Example:**
+
+"To better understand our audience, we'd like to know a bit about you. This information is confidential."
+
+- Gender: Male / Female / Other / Prefer not to say
+- Age: 18–24 / 25–34 / 35–44 / 45–54 / 55+
+
+::: {.callout-note}
+## 📋 Only ask what you'll use
+Don't collect data you won't analyze!
+:::
+
+## Survey Channels & Methods
+
+| Channel | Pros | Cons | Best for |
+|---------|------|------|----------|
+| **Online (web, email)** | Fast, cheap, wide reach | Needs internet, may miss offline populations | Tech-savvy, large samples |
+| **Phone** | Personal, can clarify | Expensive, time-consuming, declining response rates | Older audiences, complex topics |
+| **Face-to-face** | Highest response, rich data | Very expensive, time-consuming, interviewer bias | In-depth, sensitive topics |
+| **Paper (mail, in-person)** | No tech needed | Slow, data entry needed, low response rate | Offline populations, older audiences |
+| **Mobile app/SMS** | Convenient, immediate | Short surveys only, limited question types | Quick feedback, location-based |
+
+::: {.callout-tip}
+## 🎯 Mix channels if needed
+E.g., online for most, phone follow-up for non-responders!
+:::
+
+## Pilot Testing Your Survey
+
+**Before launching to full sample, test with a small group (10–30 people):**
+
+**Check for:**
+
+- **Clarity:** Do questions make sense?
+- **Flow:** Is order logical? Any fatigue?
+- **Technical issues:** Survey platform works?
+- **Timing:** How long does it take?
+- **Response patterns:** Any questions everyone skips or answers the same?
+
+**Revise based on feedback, then launch!**
+
+::: {.callout-important}
+## 💡 Don't skip this step
+Pilot testing catches problems before they ruin your data!
+:::
+
+## Ethics in Survey Research
+
+**Key principles:**
+
+- **Informed consent:** Respondents know what they're participating in
+- **Confidentiality/Anonymity:** Protect respondent identity and data
+- **No harm:** Don't ask questions that distress or endanger
+- **Voluntary:** Respondents can opt out or skip questions
+- **Honest reporting:** Report all results, not just what you like
+
+**Example:** "Your responses are anonymous and will only be used for research purposes."
+
+::: {.callout-warning}
+## ⚠️ Check your institution
+Many universities require ethics approval (IRB) for surveys involving human subjects!
+:::
+
+## Survey Design Checklist ✅
+
+Before you launch:
+
+- ☑️ **Clear objective:** What question am I answering?
+- ☑️ **Right sample:** Probability method if generalizing; adequate size
+- ☑️ **Unbiased questions:** Neutral wording, no leading
+- ☑️ **Logical flow:** Easy → hard, general → specific, sensitive at end
+- ☑️ **Appropriate length:** <10 min for online, <20 questions
+- ☑️ **Balanced options:** Mutually exclusive, collectively exhaustive
+- ☑️ **Pilot tested:** Small group feedback
+- ☑️ **Ethics:** Consent, confidentiality, voluntary
+
+::: {.callout-important}
+## 🎯 Quality over quantity
+Better to have 300 good responses than 3,000 biased ones!
+:::
+
+## Practice Exercise 1 🏋️
+
+**Identify the sampling method:**
+
+1. A researcher divides a company's employees by department, then randomly selects 20% from each department.
+2. A pollster stands outside a shopping mall and surveys the first 100 people who agree to participate.
+3. A health study starts with 10 patients with a rare disease and asks them to refer others with the same condition.
+4. A school randomly selects 5 out of 20 classrooms and surveys all students in those 5 classrooms.
+
+::: {.callout-caution}
+## ✏️ Your Turn
+Take 3 minutes. Discuss with a partner!
+:::
+
+## Sample Answer: Exercise 1
+
+1. **Stratified sampling** (divide by department, sample from each)
+2. **Convenience sampling** (whoever is available and agrees)
+3. **Snowball sampling** (referrals from initial participants)
+4. **Cluster sampling** (randomly select classrooms, survey all in selected classrooms)
+
+::: {.callout-note}
+## 💡 Notice
+1 and 4 are probability methods; 2 and 3 are non-probability!
+:::
+
+## Practice Exercise 2 🏋️
+
+**Identify the bias:**
+
+1. An online survey about internet usage is shared only on Facebook.
+2. "Don't you agree that our competitor's product is inferior to ours?"
+3. A survey about salary sent via email gets responses only from high earners (low earners too busy to respond).
+4. A face-to-face interview about alcohol consumption with a visibly disapproving interviewer.
+
+::: {.callout-caution}
+## ✏️ Your Turn (3 minutes)
+:::
+
+## Sample Answer: Exercise 2
+
+1. **Sampling bias** (only Facebook users, misses non-Facebook users)
+2. **Question wording bias / leading question** (pushes toward "agree")
+3. **Non-response bias** (responders differ from non-responders)
+4. **Interviewer bias + social desirability bias** (respondent may under-report to please interviewer)
+
+::: {.callout-tip}
+## 💡 Real surveys often have multiple biases
+Always evaluate at every stage!
+:::
+
+## Practice Exercise 3 🏋️
+
+**Improve these questions:**
+
+1. "How satisfied are you with our price and delivery speed?"
+2. "Don't you think our product is the best on the market?"
+3. "How often do you eat healthy food?"
+4. Age: 18–25, 25–35, 35–45, 45+
+
+::: {.callout-caution}
+## ✏️ Your Turn (4 minutes)
+Work individually or in pairs!
+:::
+
+## Sample Answer: Exercise 3
+
+1. ❌ **Double-barreled.** ✅ Split into two questions:
+   - "How satisfied are you with our pricing?"
+   - "How satisfied are you with our delivery speed?"
+
+2. ❌ **Leading.** ✅ "How would you rate our product compared to competitors?" (Much worse — Worse — Same — Better — Much better)
+
+3. ❌ **Vague ("healthy").** ✅ "How many servings of fruits and vegetables did you eat yesterday?"
+
+4. ❌ **Overlapping.** ✅ 18–24, 25–34, 35–44, 45+
+
+::: {.callout-important}
+## 💡 Clarity and precision
+Every word matters in survey design!
+:::
+
+## Key Takeaways 🎯
+
+**Sampling Strategies**
+
+- **Probability** (random, stratified, cluster, systematic) → generalizable, rigorous
+- **Non-probability** (convenience, purposive, quota, snowball) → faster, exploratory
+- Choose based on goals, budget, population
+
+**Bias**
+
+- **Sampling bias** (wrong people selected)
+- **Non-response bias** (responders differ from non-responders)
+- **Question wording bias** (leading questions)
+- **Interviewer & social desirability bias** (respondent doesn't answer honestly)
+- **Reduce bias:** probability sampling, neutral questions, anonymity, pilot test
+
+**Survey Design**
+
+- **Structure:** Intro → easy questions → main → sensitive/demographics → close
+- **Questions:** Clear, one topic, neutral, specific
+- **Options:** Mutually exclusive, collectively exhaustive, balanced
+- **Length:** <10 min online, <20 questions
+- **Pilot test** before launch!
+
+::: {.callout-important}
+## 💪 Next step
+Design a short survey (5–10 questions) on a topic of your choice. Apply all principles we've covered!
+:::
+
+## Practical Tips for Your Survey Project 📋
+
+**Starting your survey:**
+
+1. **Define your goal:** What do you want to learn?
+2. **Identify population:** Who should you survey?
+3. **Choose sampling method:** Probability if generalizing, non-probability if exploratory
+4. **Draft questions:** Keep it short, clear, unbiased
+5. **Design flow:** Intro → warm-up → main → demographics → close
+6. **Select platform:** Google Forms, SurveyMonkey, Qualtrics, etc.
+7. **Pilot test:** 10–20 people, revise based on feedback
+8. **Launch:** Distribute, remind, collect
+9. **Analyze:** Clean data, check for bias, analyze by demographics
+10. **Report:** Share findings, acknowledge limitations
+
+::: {.callout-tip}
+## 🎯 Remember
+A good survey takes planning. Don't rush it!
+:::
+
+## Additional Resources 📚
+
+**Recommended reading:**
+
+- *Survey Research Methods* by Floyd J. Fowler
+- *Designing Surveys* by Ronald Czaja & Johnny Blair
+- Pew Research Center's Survey Methodology articles
+
+**Online tools:**
+
+- Google Forms (free, simple)
+- SurveyMonkey (freemium, popular)
+- Qualtrics (academic, professional)
+- Sample size calculators (SurveyMonkey, Raosoft)
+
+**Practice:**
+
+- Take surveys and critique them
+- Analyze published surveys for bias
+- Design a survey for a real project
+
+::: {.callout-note}
+## 📋 Keep learning
+Survey design is both art and science. Practice makes perfect!
+:::
+
+## Thanks 🤗
+
+<div style="text-align:center; margin-top: 40px;">
+  <p style="font-size: 1.2em; color: #2980b9;">Questions?</p>
+  <p style="color: #666;">Sampling • Bias • Survey Design • Question Types</p>
+  <p style="color: #888; margin-top: 20px;">Good surveys = Good data = Good decisions!</p>
+</div>
